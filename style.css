@@ -319,6 +319,7 @@ svg {
   border-radius: 1rem;
   padding-top: 3rem;
 }
+
 .experience .first {
   display: flex;
   justify-content: start;
@@ -415,13 +416,13 @@ aside {
 }
 .about {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   font-size: var(--font28);
   width: 100%;
   height: 7.2rem;
   gap: 1.6rem;
-  color: var(--white);
+  color: var(--black);
 }
 
 .about span {
@@ -440,7 +441,20 @@ aside {
   align-items: center;
   gap: 2.8rem;
 }
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font28);
+  width: 100%;
+  height: 7.2rem;
+  gap: 1.6rem;
+  color: var(--white);
+}
 
+.project span {
+  font-weight: bolder;
+}
 .projects .projOne,
 .projects,
 .projMid {
@@ -465,11 +479,13 @@ aside {
 .projMid .imgCont {
   width: 34.3rem;
   height: 39.773rem;
+  border-radius: 2rem;
 }
 .projOne .imgCont img,
 .projMid .imgCont img {
   width: 100%;
   height: 100%;
+  border-radius: 2rem;
 }
 .projOne h2,
 .projMid h2 {
@@ -529,6 +545,14 @@ aside {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+}
+.certConts .imgCont {
+  width: 34rem;
+  height: 27.9rem;
+}
+.certConts .imgCont img {
+  width: 100%;
+  height: 100%;
 }
 .arrows {
   display: flex;
@@ -616,6 +640,7 @@ form button:hover {
 }
 
 .talk {
+  width: 34.3rem;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -645,6 +670,7 @@ form button:hover {
 .talk h3 {
   font-size: var(--font20);
   font-weight: bold;
+  font-size: var(--font16);
 }
 
 footer {

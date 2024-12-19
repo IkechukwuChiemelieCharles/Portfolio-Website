@@ -6,8 +6,7 @@ nav {
 }
 .container {
   height: 61.6rem;
-  /* justify-content: start;
-  align-items: center; */
+  justify-content: center;
   flex-direction: row;
   margin-top: 4rem;
 }
@@ -45,12 +44,11 @@ nav {
 
 .experience {
   width: 70rem;
-  height: 19.2rem;
+  height: 22.2rem;
   padding-top: 1rem;
 }
 .experience .first {
   width: 90%;
-
   gap: 0;
 }
 
@@ -94,9 +92,11 @@ aside {
 .textsAbt {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
   gap: 0.4rem;
   width: 34.3rem;
-  height: 57.2rem;
+  max-height: 57.2rem;
 }
 
 .projects .projOne {
