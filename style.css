@@ -246,13 +246,13 @@ main {
   align-items: center;
   flex-direction: column;
 }
-.skillsCont .one {
+/* .skillsCont .one {
   width: 100%;
   height: 16rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 .icon {
   display: flex;
   flex-direction: column;
@@ -285,11 +285,11 @@ main {
     transform: translateY(0px);
   }
 }
-.one .icon p {
+.icon p {
   font-size: var(--font20);
   font-weight: bold;
 }
-.one svg {
+svg {
   width: 5.6rem;
   height: 5.6rem;
 }
