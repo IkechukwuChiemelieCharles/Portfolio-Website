@@ -1,0 +1,155 @@
+nav {
+}
+
+.innerNav {
+  width: 74rem;
+}
+.container {
+  height: 61.6rem;
+  /* justify-content: start;
+  align-items: center; */
+  flex-direction: row;
+  margin-top: 4rem;
+}
+
+.innerContainer {
+  width: 100rem;
+  height: 59.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.8rem;
+
+  /* border: 1px solid blue; */
+}
+
+.mainCont {
+  width: 64.3rem;
+  gap: 2rem;
+}
+
+.mainCont .skillsCont {
+  width: 74rem;
+  height: 52rem;
+  /* gap: 2rem; */
+  flex-wrap: wrap;
+
+  gap: 4rem;
+}
+
+.icon {
+  flex: 0 0 18.6rem;
+  width: 18.6rem;
+}
+
+.experience {
+  width: 70rem;
+  height: 19.2rem;
+  padding-top: 1rem;
+}
+.experience .first {
+  width: 90%;
+
+  gap: 0;
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+article {
+  height: 69.2rem;
+  justify-content: center;
+}
+
+.artCont {
+  display: flex;
+  flex-direction: row;
+  width: 70rem;
+  gap: 2rem;
+}
+
+article .imgCont {
+  width: 52.621rem;
+  height: 57.2rem;
+  border: 2px solid var(--black);
+  border-radius: 1rem;
+}
+
+aside {
+  height: 142.4rem;
+}
+.asideCont {
+  width: 70rem;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.textsAbt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 34.3rem;
+  height: 57.2rem;
+}
+
+.projects .projOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  gap: 2.4rem;
+}
+
+.right {
+  height: 29.6rem;
+}
+.projOne .imgCont {
+  width: 33rem;
+  height: 36.773rem;
+}
+.projMid {
+  display: flex;
+  align-items: center;
+
+  flex-direction: row-reverse;
+}
+
+.getInTouch {
+  height: 60.4rem;
+  padding: 6rem 0;
+}
+.getInTouchCont {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70rem;
+}
+
+form {
+  width: 60.3rem;
+  height: 44.4rem;
+}
+
+.talk {
+  width: 60.3rem;
+}
+
+form input {
+  width: 80%;
+}
+form textarea {
+  width: 80%;
+}
+
+.innerFooter {
+  justify-content: space-between;
+  width: 74rem;
+}
