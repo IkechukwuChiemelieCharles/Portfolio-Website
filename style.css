@@ -367,7 +367,7 @@ article {
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 127.8rem;
+  /* height: 127.8rem; */
   padding: 4rem 0;
 }
 .artCont {

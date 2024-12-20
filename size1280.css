@@ -141,6 +141,9 @@ li {
   justify-content: center;
   gap: 4rem;
 }
+article {
+  height: 80rem;
+}
 
 article .imgCont {
   width: 52.545rem;
