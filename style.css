@@ -21,6 +21,125 @@ html {
   --font48: 4.8rem;
 }
 
+.theme2 {
+  --black: #ffffff;
+  --white: #000000;
+  /* --grey: #71717a;
+  --grey2: #d4d4d8;
+  --font16: 1.6rem;
+  --font20: 2rem;
+  --font24: 2.4rem;
+  --font28: 2.8rem;
+  --font32: 3.2rem;
+  --font48: 4.8rem; */
+}
+.mobileMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid red;
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--black);
+  z-index: 10;
+  animation-name: mobile-animation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  /* opacity: 0; */
+}
+
+@keyframes mobile-animation {
+  0% {
+    width: 0;
+  }
+
+  90% {
+    width: 60vw;
+  }
+  100% {
+    width: 50vw;
+  }
+}
+
+.closeMobileMenu {
+  animation-name: closeMenu;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes closeMenu {
+  0% {
+    width: 50vw;
+  }
+
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+.mobileMenu .close {
+  color: var(--white);
+  align-self: flex-end;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.mobileMenuLinks {
+  border: 1px solid red;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 5rem;
+}
+.mobileMenuLinks a,
+li {
+  text-decoration: none;
+  list-style: none;
+  font-size: var(--font20);
+  font-weight: bold;
+  color: var(--white);
+}
+
+.themeToggle {
+  border: 2px solid red;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--black);
+  color: var(--white);
+  z-index: 200;
+  margin-top: 10rem;
+  position: fixed;
+  right: 0;
+  bottom: 10rem;
+}
+.themeToggle i {
+  font-size: 5rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
 body {
   font-family: "Sora", serif;
   background-color: var(--white);
@@ -143,16 +262,19 @@ nav .logoCont {
 
 .introText .greeting {
   font-size: var(--font28);
+  color: var(--black);
 }
 .introText .name {
   font-size: var(--font28);
   font-weight: bolder;
-  text-shadow: 0 1px 3px black;
+  text-shadow: 0 1px 3px var(--black);
+  color: var(--black);
 }
 
 .introText .role1,
 .introText .role2,
 .introText .location {
+  color: var(--black);
   font-size: var(--font28);
   font-weight: bolder;
 }
@@ -190,7 +312,8 @@ nav .logoCont {
   background-color: var(--white);
   border-radius: 0.4rem;
 }
-.iconCont a:hover {
+.iconCont a:hover,
+svg {
   background-color: var(--black);
   fill: var(--white);
 }
@@ -198,6 +321,7 @@ nav .logoCont {
   width: 2rem;
   height: 2rem;
   color: var(--grey);
+  /* fill: var(--black); */
 }
 
 main {
@@ -266,7 +390,11 @@ main {
   border: 2px solid var(--black);
   border-radius: 0.4rem;
 }
-
+.icon p {
+  font-size: var(--font20);
+  color: var(--black);
+  font-weight: bold;
+}
 .icon:hover {
   background-color: var(--black);
   color: var(--white);
@@ -286,10 +414,7 @@ main {
     transform: translateY(0px);
   }
 }
-.icon p {
-  font-size: var(--font20);
-  font-weight: bold;
-}
+
 svg {
   width: 5.6rem;
   height: 5.6rem;

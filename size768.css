@@ -63,7 +63,6 @@ nav {
 article {
   height: 149.2rem;
   justify-content: center;
-  border: 1px solid red;
   justify-content: start;
   padding-top: 10rem;
 }
@@ -90,7 +89,6 @@ article .imgCont {
   align-items: start;
   gap: 0.4rem;
   width: 34.3rem;
-  border: 1px solid red;
   max-height: 57.2rem;
 }
 
