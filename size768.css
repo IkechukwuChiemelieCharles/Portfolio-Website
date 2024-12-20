@@ -24,8 +24,9 @@ nav {
 }
 
 .mainCont {
-  width: 64.3rem;
+  width: 100%;
   gap: 2rem;
+  border: 1px solid green;
 }
 
 .mainCont .skillsCont {
@@ -33,7 +34,6 @@ nav {
   height: 52rem;
   /* gap: 2rem; */
   flex-wrap: wrap;
-
   gap: 4rem;
 }
 
@@ -79,16 +79,6 @@ article .imgCont {
   border: 2px solid var(--black);
   border-radius: 1rem;
 }
-
-aside {
-  height: 142.4rem;
-}
-.asideCont {
-  width: 70rem;
-  justify-content: center;
-  gap: 4rem;
-}
-
 .textsAbt {
   display: flex;
   flex-direction: column;
@@ -97,6 +87,15 @@ aside {
   gap: 0.4rem;
   width: 34.3rem;
   max-height: 57.2rem;
+}
+
+aside {
+  height: 142.4rem;
+}
+.asideCont {
+  width: 70rem;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .projects .projOne {
@@ -118,7 +117,6 @@ aside {
 .projMid {
   display: flex;
   align-items: center;
-
   flex-direction: row-reverse;
 }
 

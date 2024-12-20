@@ -60,6 +60,7 @@ nav .logoCont {
   align-items: center;
   gap: 0.8rem;
 }
+
 .logoCont img {
   width: 2.3rem;
   height: 2.3rem;
@@ -260,7 +261,7 @@ main {
   align-items: center;
   flex: 0 0 16.15rem;
   width: 16.15rem;
-  /* height: 16rem; */
+  height: 16rem;
   background-color: var(--white);
   border: 2px solid var(--black);
   border-radius: 0.4rem;
@@ -271,7 +272,7 @@ main {
   color: var(--white);
   fill: var(--white);
   transition: all ease-in 1;
-  animation: hide-animation 1s ease-in-out forwards;
+  animation: hide-animation 0.5s ease-in-out forwards;
 }
 @keyframes hide-animation {
   0% {
@@ -596,7 +597,6 @@ aside {
   justify-content: center;
   align-items: start;
   width: 34.3rem;
-
   height: 100%;
 }
 form {
@@ -622,6 +622,13 @@ form textarea {
   resize: none;
 }
 
+form .btnXicon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2.4rem;
+}
 form button {
   width: 13.9rem;
   height: 4.8rem;
@@ -690,4 +697,8 @@ footer {
   justify-content: space-between;
   width: 34.3rem;
   height: 4rem;
+}
+
+.innerFooter .at {
+  font-size: var(--font16);
 }
