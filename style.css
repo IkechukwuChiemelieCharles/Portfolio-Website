@@ -24,6 +24,8 @@ html {
 .theme2 {
   --black: #ffffff;
   --white: #000000;
+  --grey: #71717a;
+
   /* --grey: #71717a;
   --grey2: #d4d4d8;
   --font16: 1.6rem;
@@ -38,13 +40,12 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid red;
   width: 50vw;
   height: 100vh;
   position: fixed;
   top: 0;
   right: 0;
-  background-color: var(--black);
+  background-color: var(--white);
   z-index: 10;
   animation-name: mobile-animation;
   animation-duration: 1s;
@@ -52,6 +53,7 @@ html {
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  border: 2px solid var(--black);
 
   /* opacity: 0; */
 }
@@ -96,7 +98,6 @@ html {
 }
 
 .mobileMenuLinks {
-  border: 1px solid red;
   width: 80%;
   height: 100%;
   display: flex;
@@ -107,16 +108,16 @@ html {
   margin-top: 5rem;
 }
 .mobileMenuLinks a,
-li {
+li,
+i {
   text-decoration: none;
   list-style: none;
   font-size: var(--font20);
   font-weight: bold;
-  color: var(--white);
+  color: var(--black);
 }
 
 .themeToggle {
-  border: 2px solid red;
   width: 5rem;
   height: 5rem;
   background-color: var(--black);
@@ -184,9 +185,10 @@ nav .logoCont {
   width: 2.3rem;
   height: 2.3rem;
 }
-.logoXtext p {
+.logoXtext .logoname1 {
   font-size: var(--font20);
   font-weight: bold;
+  color: var(--black);
 }
 
 .links {
@@ -203,9 +205,10 @@ nav .logoCont {
   align-items: center;
   cursor: pointer;
 }
-.harm {
-  width: 2.7rem;
-  height: 1.8rem;
+.harmCont i {
+  font-size: 2.7rem;
+  /* height: 1.8rem; */
+  /* fill: var(--black); */
 }
 .container {
   width: 100vw;
@@ -236,9 +239,14 @@ nav .logoCont {
   width: 100%;
 }
 .container .line {
+}
+
+.container .line2 {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 34.4rem;
+  border: 2px solid var(--black);
 }
 
 .container .textXlogo {
@@ -396,9 +404,9 @@ main {
   font-weight: bold;
 }
 .icon:hover {
-  background-color: var(--black);
-  color: var(--white);
-  fill: var(--white);
+  /* background-color: var(--black); */
+  /* color: var(--white); */
+  /* fill: var(--white); */
   transition: all ease-in 1;
   animation: hide-animation 0.5s ease-in-out forwards;
 }
@@ -478,11 +486,11 @@ svg {
 }
 .mid h5 {
   font-size: var(--font16);
-  color: var(--grey2);
+  color: var(--grey);
 }
 .mid p {
   font-size: var(--font16);
-  color: var(--grey2);
+  color: var(--grey);
   line-height: 2.4rem;
 }
 
@@ -826,4 +834,10 @@ footer {
 
 .innerFooter .at {
   font-size: var(--font16);
+}
+
+.logoName {
+  font-size: var(--font20);
+  font-weight: bold;
+  color: var(--white);
 }
