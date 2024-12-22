@@ -155,6 +155,7 @@ nav .logoCont {
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
+  text-decoration: none;
 }
 
 .logoCont img {
