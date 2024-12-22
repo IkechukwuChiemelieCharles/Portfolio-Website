@@ -16,8 +16,6 @@ close.addEventListener("click", function () {
   mobile.classList.toggle("open");
 });
 
-const link = document.querySelectorAll(".link");
-
 sun.addEventListener("click", function () {
   body.classList.add("theme2");
   moon.classList.remove("hide");
@@ -41,5 +39,27 @@ moon.addEventListener("click", function () {
   });
   darkLogo.forEach(function (dark) {
     dark.classList.toggle("hide");
+  });
+});
+
+const link = document.querySelectorAll('a[href^="#"]');
+
+link.forEach(function (links) {
+  links.addEventListener("click", function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute("href");
+    // console.log(this);
+
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+    // window.scrollTo({
+    //   top: targetElement.offsetTop,
+    //   behavior: "smooth",
+    // });
   });
 });
