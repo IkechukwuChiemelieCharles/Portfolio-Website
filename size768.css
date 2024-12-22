@@ -1,6 +1,27 @@
-nav {
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #71717a;
+  --grey2: #d4d4d8;
+  --font16: 1.6rem;
+  --font20: 2rem;
+  --font24: 2.4rem;
+  --font28: 2.8rem;
+  --font32: 3.2rem;
+  --font48: 4.8rem;
 }
 
+.harmCont i {
+  font-size: 3.7rem;
+  /* height: 1.8rem; */
+  /* fill: var(--black); */
+}
+
+.logoXtext .logoname1 {
+  font-size: var(--font24);
+  font-weight: bold;
+  color: var(--black);
+}
 .innerNav {
   width: 74rem;
 }

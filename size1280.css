@@ -22,7 +22,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 43.7rem;
+  gap: 2rem;
+  width: 63.7rem;
 }
 
 .links a,

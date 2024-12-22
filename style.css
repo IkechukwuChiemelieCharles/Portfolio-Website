@@ -47,47 +47,23 @@ html {
   right: 0;
   background-color: var(--white);
   z-index: 10;
-  animation-name: mobile-animation;
+
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+
+  /* animation-name: mobile-animation;
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
   border: 2px solid var(--black);
 
   /* opacity: 0; */
 }
 
-@keyframes mobile-animation {
-  0% {
-    width: 0;
-  }
-
-  90% {
-    width: 60vw;
-  }
-  100% {
-    width: 50vw;
-  }
-}
-
-.closeMobileMenu {
-  animation-name: closeMenu;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-@keyframes closeMenu {
-  0% {
-    width: 50vw;
-  }
-
-  100% {
-    width: 0;
-    opacity: 0;
-  }
+.mobileMenu.open {
+  transform: translateX(0);
 }
 
 .mobileMenu .close {
@@ -356,6 +332,7 @@ main {
   width: 100%;
   height: 7.2rem;
   gap: 1.6rem;
+  color: var(--black);
 }
 
 .skill span {
