@@ -723,12 +723,16 @@ form input {
   height: 5.6rem;
   padding-left: 2.4rem;
   color: var(--grey);
+  background-color: var(--white);
+  border: 2px solid var(--black);
 }
 form textarea {
   width: 100%;
   height: 14rem;
   padding: 2.4rem;
   color: var(--grey);
+  background-color: var(--white);
+  border: 2px solid var(--black);
   resize: none;
 }
 
