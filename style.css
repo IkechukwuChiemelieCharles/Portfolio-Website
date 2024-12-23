@@ -301,6 +301,7 @@ nav .logoCont {
   background-color: var(--white);
   border-radius: 0.4rem;
 }
+
 .iconCont a:hover,
 svg {
   background-color: var(--black);
@@ -386,13 +387,32 @@ main {
   color: var(--black);
   font-weight: bold;
 }
+.hoverCont1:hover .dropDownAbout {
+  display: flex;
+}
 .icon:hover {
-  /* background-color: var(--black); */
-  /* color: var(--white); */
-  /* fill: var(--white); */
+  background-color: var(--black);
+  color: var(--white);
+  fill: var(--white);
   transition: all ease-in 1;
   animation: hide-animation 0.5s ease-in-out forwards;
 }
+
+.icon:hover p {
+  /* background-color: var(--black); */
+  color: var(--white);
+  /* fill: var(--white);
+  transition: all ease-in 1;
+  animation: hide-animation 0.5s ease-in-out forwards; */
+}
+.icon:hover svg {
+  /* background-color: var(--black); */
+  /* color: var(--white); */
+  fill: var(--white);
+  /* transition: all ease-in 1;
+  animation: hide-animation 0.5s ease-in-out forwards; */
+}
+
 @keyframes hide-animation {
   0% {
     transform: translateY(0);
@@ -416,7 +436,6 @@ svg {
   color: var(--white);
   width: 100vw;
   height: 62.6rem;
-  border: 1px solid red;
   padding: 4rem 0;
   display: flex;
   justify-content: center;
@@ -655,7 +674,6 @@ aside {
 .certs {
   width: 100vw;
   height: 60rem;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -669,6 +687,29 @@ aside {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+}
+
+.slideshow-container {
+  width: 44rem;
+  height: 27.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.arr {
+  display: flex;
+  gap: 5rem;
+}
+.arr .prev,
+.arr .next {
+  font-size: 5rem;
+  cursor: pointer;
+  color: var(--black);
+}
+.mySlides img {
+  width: 100%;
+  height: 27.9rem;
 }
 .certConts .imgCont {
   width: 34rem;
