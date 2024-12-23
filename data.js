@@ -57,8 +57,8 @@ link.forEach(function (links) {
         behavior: "smooth",
       });
 
-      close.classList.toggle("open");
-      mobile.classList.toggle("open");
+      // close.classList.toggle("open");
+      mobile.classList.remove("open");
     }
     // window.scrollTo({
     //   top: targetElement.offsetTop,
