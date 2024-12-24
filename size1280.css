@@ -45,12 +45,13 @@ li {
   background-color: var(--black);
   border: none;
   border-radius: 0.4rem;
-  color: var(--white);
+  color: var(--white) !important;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   font-size: var(--font20);
   cursor: pointer;
+  text-decoration: none;
 }
 .download i {
   color: var(--white);
