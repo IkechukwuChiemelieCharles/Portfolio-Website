@@ -851,6 +851,7 @@ form button:hover {
   font-size: 2.8rem;
 }
 .connectCont .lets {
+  color: var(--black);
   font-weight: bolder;
 }
 .connect {
@@ -865,6 +866,7 @@ form button:hover {
   color: var(--grey);
 }
 .emailXnum {
+  color: var(--black);
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
