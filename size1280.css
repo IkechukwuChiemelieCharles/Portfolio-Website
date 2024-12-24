@@ -154,7 +154,7 @@ li {
   gap: 4rem;
 }
 article {
-  height: 80rem;
+  /* height: 80rem; */
 }
 
 article .imgCont {
@@ -165,7 +165,7 @@ article .imgCont {
 .textsAbt {
   gap: 0.4rem;
   width: 61rem;
-  max-height: 57.2rem;
+  /* max-height: 57.2rem; */
 }
 
 .asideCont {

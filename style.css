@@ -7,7 +7,6 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  outline: 1px solid blue;
 }
 
 :root {
@@ -563,6 +562,22 @@ article .imgCont img {
   height: 100%;
 }
 
+article button {
+  width: 13.9rem;
+  height: 4.8rem;
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: bold;
+  border: none;
+  border-radius: 0.4rem;
+}
+article button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 2px solid var(--black);
+  cursor: pointer;
+  font-weight: bolder;
+}
 aside {
   background-color: var(--black);
   width: 100vw;

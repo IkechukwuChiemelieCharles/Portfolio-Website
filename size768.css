@@ -49,8 +49,6 @@
   align-items: center;
   flex-direction: row;
   gap: 1.8rem;
-
-  /* border: 1px solid blue; */
 }
 
 .mainCont {
@@ -91,7 +89,7 @@
 }
 
 article {
-  height: 149.2rem;
+  /* height: 120.2rem; */
   justify-content: center;
   justify-content: start;
   padding-top: 10rem;
@@ -119,14 +117,23 @@ article .imgCont {
   border: 2px solid var(--black);
   border-radius: 1rem;
 }
+article button {
+  width: 13.9rem;
+  height: 4.8rem;
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: bold;
+  border: none;
+  border-radius: 0.4rem;
+}
 .textsAbt {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   align-items: start;
   gap: 0.4rem;
   width: 34.3rem;
-  max-height: 57.2rem;
+  max-height: 100%;
 }
 
 aside {

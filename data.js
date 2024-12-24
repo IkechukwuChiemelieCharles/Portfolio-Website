@@ -6,6 +6,9 @@ const harmCont = document.querySelector(".harmCont");
 const close = document.querySelector(".close");
 const lightLogo = document.querySelectorAll(".lightLogo");
 const darkLogo = document.querySelectorAll(".darkLogo");
+const aboutTextHidden = document.querySelectorAll(".aboutTextHidden");
+const readMore = document.querySelector(".readMore");
+const readLess = document.querySelector(".readLess");
 
 harmCont.addEventListener("click", function () {
   harmCont.classList.toggle("open");
@@ -105,3 +108,20 @@ function autoSlide() {
 }
 
 setInterval(autoSlide, 3000);
+
+readMore.addEventListener("click", function (e) {
+  console.log(e);
+  aboutTextHidden.forEach(function (texts) {
+    texts.classList.remove("hide");
+    readLess.classList.remove("hide");
+    readMore.classList.add("hide");
+  });
+});
+readLess.addEventListener("click", function (e) {
+  console.log(e);
+  aboutTextHidden.forEach(function (texts) {
+    texts.classList.add("hide");
+    readMore.classList.remove("hide");
+    readLess.classList.add("hide");
+  });
+});
