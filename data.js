@@ -20,7 +20,7 @@ close.addEventListener("click", function () {
 });
 
 sun.addEventListener("click", function () {
-  body.classList.add("theme2");
+  body.classList.remove("theme2");
   moon.classList.remove("hide");
   sun.classList.add("hide");
 
@@ -33,7 +33,7 @@ sun.addEventListener("click", function () {
 });
 
 moon.addEventListener("click", function () {
-  body.classList.remove("theme2");
+  body.classList.add("theme2");
   moon.classList.add("hide");
   sun.classList.remove("hide");
 

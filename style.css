@@ -50,9 +50,9 @@ body {
   right: 0;
   background-color: var(--white);
   z-index: 10;
-
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
 
   /* animation-name: mobile-animation;
   animation-duration: 1s;
@@ -120,30 +120,13 @@ i {
   color: var(--white);
 }
 
-.themeToggle {
-  width: 5rem;
-  height: 5rem;
-  background-color: var(--black);
-  color: var(--white);
-  z-index: 200;
-  margin-top: 10rem;
-  position: fixed;
-  right: 0;
-  bottom: 10rem;
-}
-.themeToggle i {
-  font-size: 5rem;
-  color: var(--white);
-  cursor: pointer;
+.moon {
 }
 
 .hidden {
   display: none;
 }
 
-.hide {
-  display: none;
-}
 body {
   font-family: "Sora", serif;
   background-color: var(--white);
@@ -328,8 +311,7 @@ nav .logoCont {
   border-radius: 0.4rem;
 }
 
-.iconCont a:hover,
-svg {
+.iconCont a:hover {
   background-color: var(--black);
   fill: var(--white);
 }
@@ -416,7 +398,8 @@ main {
 .hoverCont1:hover .dropDownAbout {
   display: flex;
 }
-.icon:hover {
+.icon:hover,
+svg {
   background-color: var(--black);
   color: var(--white);
   fill: var(--white);
@@ -919,4 +902,46 @@ footer {
   font-size: var(--font20);
   font-weight: bold;
   color: var(--white);
+}
+
+.themeToggle {
+  background-color: var(--black);
+  color: var(--white);
+  z-index: 200;
+  /* margin-top: 10rem; */
+  position: fixed;
+  right: 0;
+  bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  width: 6rem;
+  height: 6rem;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+/* .themeToggle i {
+  font-size: 5rem;
+  color: var(--white);
+  cursor: pointer;
+} */
+
+.moon,
+.sun {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.moon svg,
+.sun svg {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--white);
+}
+.hide {
+  display: none;
 }
