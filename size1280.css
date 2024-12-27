@@ -175,7 +175,7 @@ article .imgCont {
 }
 
 aside {
-  height: 182.4rem;
+  /* height: 182.4rem; */
 }
 
 .projects {
@@ -185,44 +185,40 @@ aside {
   width: 100%;
 }
 
-.projects .projMid {
+.projects .projm {
   gap: 1rem;
   width: 100%;
   justify-content: space-around;
 }
 
-.projOne .imgCont {
+.projects .imgCont {
   width: 59.4rem;
   height: 47.6rem;
   /* border: 1px solid white; */
 }
 
-.projMid .imgCont {
+.projm .imgCont {
   width: 59.4rem;
   height: 47.6rem;
   justify-content: end;
   display: flex;
 }
-.projOne .imgCont img,
-.projMid .imgCont img {
+.projects .imgCont img {
   width: 40rem;
   height: 100%;
   /* border: 1px solid green; */
 }
 
-.projOne .right,
-.projMid .right {
+.projects .right {
   gap: 2.4rem;
   width: 58.2rem;
   height: 29.6rem;
 }
 
-.projOne h2,
-.projMid h2 {
+.projects h2 {
   font-size: var(--font48);
 }
-.projOne h4,
-.projMid h4 {
+.projects h4 {
   font-size: var(--font32);
 }
 

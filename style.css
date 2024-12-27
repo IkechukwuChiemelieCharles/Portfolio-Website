@@ -564,12 +564,12 @@ article button:hover {
 aside {
   background-color: var(--black);
   width: 100vw;
-  height: 254.92rem;
+  /* height: 254.92rem; */
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  padding: 4rem 0 0 0;
+  padding: 4rem 0;
 }
 
 .asideCont {
@@ -605,7 +605,7 @@ aside {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.8rem;
+  gap: 4rem;
 }
 .project {
   display: flex;
@@ -614,16 +614,14 @@ aside {
   font-size: var(--font28);
   width: 100%;
   height: 7.2rem;
-  gap: 1.6rem;
   color: var(--white);
 }
 
 .project span {
   font-weight: bolder;
 }
-.projects .projOne,
-.projects,
-.projMid {
+.projects .proj,
+.projects .projm {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -640,31 +638,87 @@ aside {
   width: 34.3rem;
   height: 32.4rem;
 }
-
-.projOne .imgCont,
+.language {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+.language div {
+  display: flex;
+  /* width: 6rem; */
+  padding: 0 2rem 0 0;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.language span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 2rem; */
+  padding: 0.8rem 1rem;
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: bolder;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
+.language div p {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: var(--white);
+  position: absolute;
+  bottom: 1.2rem;
+  right: 0;
+  /* border-radius: 5rem; */
+}
+.projOne .imgCont {
+  background-image: url(./asset/desktop-design-light.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .projMid .imgCont {
+  background-image: url(./asset/xye51b9no1nkpuonov8r.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.projthree .imgCont {
+  background-image: url(./asset/jumia.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projtwo .imgCont {
+  background-image: url(./asset/Guess.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects .imgCont {
   width: 34.3rem;
   height: 39.773rem;
   border-radius: 2rem;
 }
-.projOne .imgCont img,
-.projMid .imgCont img {
+.projects .imgCont img {
   width: 100%;
   height: 100%;
   border-radius: 2rem;
 }
-.projOne h2,
-.projMid h2 {
+.projects h2 {
   font-size: var(--font24);
   font-weight: bolder;
 }
-.projOne h4,
-.projMid h4 {
+.projects h4 {
   font-size: var(--font20);
   font-weight: bolder;
 }
-.projOne p,
-.projMid p {
+.projects p {
   color: var(--grey);
   font-size: var(--font16);
   line-height: 2.4rem;
