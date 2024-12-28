@@ -687,7 +687,7 @@ aside {
   background-size: cover;
 }
 .projthree .imgCont {
-  background-image: url(./asset/jumia.jpg);
+  background-image: url(./asset/20241227_214614.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -695,6 +695,13 @@ aside {
 
 .projtwo .imgCont {
   background-image: url(./asset/Guess.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projfour .imgCont {
+  background-image: url(./asset/jumia.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
