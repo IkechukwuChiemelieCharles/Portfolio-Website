@@ -706,6 +706,12 @@ aside {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.projfive .imgCont {
+  background-image: url(./asset/fairmoney.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .projects .imgCont {
   width: 34.3rem;
