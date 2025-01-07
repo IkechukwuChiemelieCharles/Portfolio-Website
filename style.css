@@ -103,8 +103,8 @@ body {
   margin-top: 5rem;
 }
 .mobileMenuLinks a,
-li,
-i {
+.mobileMenuLinks li,
+.mobileMenuLinks i {
   text-decoration: none;
   list-style: none;
   font-size: var(--font20);
@@ -205,6 +205,7 @@ nav .logoCont {
 }
 .harmCont i {
   font-size: 2.7rem;
+  color: var(--black);
   /* height: 1.8rem; */
   /* fill: var(--black); */
 }
@@ -311,6 +312,19 @@ nav .logoCont {
   gap: 2.4rem;
 }
 
+/* .mobileMenuLinks a,
+.mobileMenuLinks li,
+.mobileMenuLinks i {
+  text-decoration: none;
+  list-style: none;
+  font-size: var(--font20);
+  font-weight: bold;
+  color: var(--white);
+} */
+/* .iconCont a {
+  color: var(--black);
+} */
+
 .iconCont a {
   display: flex;
   align-items: center;
@@ -320,6 +334,7 @@ nav .logoCont {
   border: 2px solid var(--black);
   background-color: var(--white);
   border-radius: 0.4rem;
+  fill: var(--black);
 }
 
 .iconCont a:hover {
