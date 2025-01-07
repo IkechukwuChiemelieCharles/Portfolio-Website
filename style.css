@@ -20,6 +20,7 @@ html {
   --font28: 2.8rem;
   --font32: 3.2rem;
   --font48: 4.8rem;
+  --blur: rgba(0, 0, 0, 0.562);
 }
 body {
 }
@@ -28,6 +29,7 @@ body {
   --black: #ffffff;
   --white: #000000;
   --grey: #71717a;
+  --blur: rgba(209, 208, 208, 0.521);
 
   /* --grey: #71717a;
   --grey2: #d4d4d8;
@@ -48,7 +50,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: var(--white);
+  background-color: var(--blur);
   z-index: 10;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
@@ -60,11 +62,20 @@ body {
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; */
-  border: 2px solid var(--black);
+  backdrop-filter: blur(2px);
 
   /* opacity: 0; */
 }
-
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: var(--blur);
+  left: 0;
+  z-index: 5;
+  position: fixed;
+  backdrop-filter: blur(2px);
+}
 /* .download2 a {
   text-decoration: none;
   color: var(--white);
@@ -98,7 +109,7 @@ i {
   list-style: none;
   font-size: var(--font20);
   font-weight: bold;
-  color: var(--black);
+  color: var(--white);
 }
 
 .download2 {
@@ -399,7 +410,7 @@ main {
   display: flex;
 }
 .icon:hover,
-svg {
+.icon svg {
   background-color: var(--black);
   color: var(--white);
   fill: var(--white);
@@ -1008,7 +1019,35 @@ footer {
   width: 3rem;
   height: 3rem;
   fill: var(--white);
+  transition: all ease-in 1;
+  animation: rotate 0.5s ease-in-out forwards;
 }
+/* .rotated{
+  transform
+} */
+
+/* .icon:hover,
+.icon svg {
+  background-color: var(--black);
+  color: var(--white);
+  fill: var(--white);
+  transition: all ease-in 1;
+  animation: hide-animation 0.5s ease-in-out forwards;
+} */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .hide {
   display: none;
 }

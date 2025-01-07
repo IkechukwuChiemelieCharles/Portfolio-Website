@@ -9,14 +9,17 @@ const darkLogo = document.querySelectorAll(".darkLogo");
 const aboutTextHidden = document.querySelectorAll(".aboutTextHidden");
 const readMore = document.querySelector(".readMore");
 const readLess = document.querySelector(".readLess");
+const overlay = document.querySelector(".overlay");
 
 harmCont.addEventListener("click", function () {
   harmCont.classList.toggle("open");
   mobile.classList.toggle("open");
+  overlay.classList.toggle("hide");
 });
 close.addEventListener("click", function () {
   close.classList.toggle("open");
   mobile.classList.toggle("open");
+  overlay.classList.toggle("hide");
 });
 
 sun.addEventListener("click", function () {
