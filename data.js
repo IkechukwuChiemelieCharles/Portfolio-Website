@@ -53,6 +53,8 @@ const link = document.querySelectorAll('a[href^="#"]');
 link.forEach(function (links) {
   links.addEventListener("click", function (e) {
     e.preventDefault();
+
+    overlay.classList.add("hide");
     const targetId = this.getAttribute("href");
     // console.log(this);
 
