@@ -114,7 +114,6 @@ article {
 article .imgCont {
   width: 33.621rem;
   height: 36.6rem;
-  border: 2px solid var(--black);
   border-radius: 1rem;
 }
 article button {
