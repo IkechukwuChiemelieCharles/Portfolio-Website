@@ -741,6 +741,12 @@ aside {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.projSix .imgCont {
+  background-image: url(./asset/stalink2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .projects .imgCont {
   width: 34.3rem;
