@@ -71,10 +71,14 @@
 
 .experience {
   width: 70rem;
-  height: 22.2rem;
+  /* height: 22.2rem; */
   padding-top: 1rem;
 }
 .experience .first {
+  width: 90%;
+  gap: 0;
+}
+.experience .grey {
   width: 90%;
   gap: 0;
 }

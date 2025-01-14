@@ -65,13 +65,8 @@ link.forEach(function (links) {
         behavior: "smooth",
       });
 
-      // close.classList.toggle("open");
       mobile.classList.remove("open");
     }
-    // window.scrollTo({
-    //   top: targetElement.offsetTop,
-    //   behavior: "smooth",
-    // });
   });
 });
 
@@ -81,7 +76,6 @@ slider(slideIndex);
 
 function slider(n) {
   const slides = document.querySelectorAll(".mySlides");
-  // const dots = document.querySelectorAll(".dot");
 
   if (n > slides.length) {
     slideIndex = 1;
@@ -93,11 +87,8 @@ function slider(n) {
   slides.forEach(function (slide) {
     slide.style.display = "none";
   });
-  // dots.forEach(function (dot) {
-  //   dot.classList.remove("active");
-  // });
+
   slides[slideIndex - 1].style.display = "block";
-  // dots[slideIndex - 1].classList.add("active");
 }
 
 function plusSlides(b) {

@@ -14,6 +14,8 @@ html {
   --white: #ffffff;
   --grey: #71717a;
   --grey2: #d4d4d8;
+  --expBg1: #000000;
+  --expBg2: #c4c4ca;
   --font16: 1.6rem;
   --font20: 2rem;
   --font24: 2.4rem;
@@ -30,6 +32,8 @@ body {
   --white: #000000;
   --grey: #71717a;
   --blur: rgba(209, 208, 208, 0.521);
+  --expBg2: #000000;
+  --expBg1: #c4c4ca;
 
   /* --grey: #71717a;
   --grey2: #d4d4d8;
@@ -471,7 +475,7 @@ svg {
   background-color: var(--black);
   color: var(--white);
   width: 100vw;
-  height: 62.6rem;
+  /* height: 102.6rem; */
   padding: 4rem 0;
   display: flex;
   justify-content: center;
@@ -487,14 +491,14 @@ svg {
 
 .experience {
   width: 34.3rem;
-  height: 42.6rem;
+  /* height: 89.6rem; */
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  border: 1px solid var(--grey);
   border-radius: 1rem;
   padding-top: 3rem;
+  gap: 5rem;
 }
 
 .experience .first {
@@ -502,9 +506,29 @@ svg {
   justify-content: start;
   align-items: start;
   flex-direction: column;
-  width: 29.5rem;
-  height: 24rem;
+  width: 100%;
+  padding: 2rem;
+  /* height: 24rem; */
   gap: 3rem;
+  border: 2px solid var(--grey);
+  background-color: var(--expBg1);
+}
+.experience .grey {
+  background-color: var(--expBg2);
+  color: var(--white) !important;
+  border: 2px solid var(--grey);
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  /* height: 24rem; */
+  gap: 3rem;
+}
+.experience .grey h4 {
+  color: var(--black) !important;
 }
 
 .first .top {
@@ -516,9 +540,12 @@ svg {
 .top img {
   width: 3.2rem;
   height: 3.2rem;
+  border-radius: 2rem;
 }
 .top h4 {
   font-size: var(--font20);
+  /* border: 1px solid red; */
+  /* color: var(--white); */
 }
 .mid {
   display: flex;
