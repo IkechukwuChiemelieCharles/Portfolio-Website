@@ -124,13 +124,13 @@ readLess.addEventListener("click", function (e) {
   });
 });
 
-// submit.addEventListener("click", function (e) {
+// submit.addEventListener("submit", function (e) {
 //   console.log("form");
 
 //   formInput.forEach(function (inp) {
 //     console.log(inp.value);
-//     inp.value = "";
-//     // setTimeout(function () {
-//     // }, 4000);
+//     setTimeout(function () {
+//       inp.value = "";
+//     }, 4000);
 //   });
 // });
