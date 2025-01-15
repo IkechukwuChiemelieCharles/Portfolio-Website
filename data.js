@@ -10,6 +10,8 @@ const aboutTextHidden = document.querySelectorAll(".aboutTextHidden");
 const readMore = document.querySelector(".readMore");
 const readLess = document.querySelector(".readLess");
 const overlay = document.querySelector(".overlay");
+const submit = document.querySelector("#submit");
+const formInput = document.querySelectorAll(".formInput");
 
 harmCont.addEventListener("click", function () {
   harmCont.classList.toggle("open");
@@ -121,3 +123,14 @@ readLess.addEventListener("click", function (e) {
     readLess.classList.add("hide");
   });
 });
+
+// submit.addEventListener("click", function (e) {
+//   console.log("form");
+
+//   formInput.forEach(function (inp) {
+//     console.log(inp.value);
+//     inp.value = "";
+//     // setTimeout(function () {
+//     // }, 4000);
+//   });
+// });
