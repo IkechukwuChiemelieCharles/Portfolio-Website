@@ -540,7 +540,7 @@ svg {
 .top img {
   width: 3.2rem;
   height: 3.2rem;
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
 }
 .top h4 {
   font-size: var(--font20);
