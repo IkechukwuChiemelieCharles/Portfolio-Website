@@ -1062,16 +1062,20 @@
             type="text"
             required
             class="formInput"
-            placeholder="Your name"
+            placeholder="Your name*"
             name="name"
           />
+          <p class="error hide">Your Name Please</p>
+
           <input
             required
             type="email"
             class="formInput"
-            placeholder="Email"
-            name="email"
+            placeholder="Email*"
+            name="email*"
           />
+          <p class="error hide">Please Type in Your Email</p>
+
           <input
             type="text"
             class="formInput"
@@ -1085,6 +1089,7 @@
             id=""
             placeholder="Message*"
           ></textarea>
+          <p class="error hide">Your Message For Me</p>
 
           <div class="btnXicon">
             <button type="submit" id="submit">Get In Touch</button>

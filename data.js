@@ -11,6 +11,7 @@ const readMore = document.querySelector(".readMore");
 const readLess = document.querySelector(".readLess");
 const overlay = document.querySelector(".overlay");
 const submit = document.querySelector("#submit");
+const error = document.querySelectorAll(".error");
 const formInput = document.querySelectorAll(".formInput");
 
 harmCont.addEventListener("click", function () {
@@ -124,13 +125,17 @@ readLess.addEventListener("click", function (e) {
   });
 });
 
-// submit.addEventListener("submit", function (e) {
-//   console.log("form");
+submit.addEventListener("click", function (e) {
+  // e.preventDefault();
+  console.log("btn");
 
-//   formInput.forEach(function (inp) {
-//     console.log(inp.value);
-//     setTimeout(function () {
-//       inp.value = "";
-//     }, 4000);
-//   });
-// });
+  formInput.forEach(function (inp, i) {
+    if (inp.value === "") {
+      console.log("rm");
+      error[i].classList.remove("hide");
+      error[i].style.color = "red";
+    } else {
+      error[i].classList.add("hide");
+    }
+  });
+});
