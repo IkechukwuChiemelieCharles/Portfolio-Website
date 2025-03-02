@@ -131,11 +131,15 @@ submit.addEventListener("click", function (e) {
 
   formInput.forEach(function (inp, i) {
     if (inp.value === "") {
-      console.log("rm");
+      // console.log("rm");
       error[i].classList.remove("hide");
       error[i].style.color = "red";
     } else {
       error[i].classList.add("hide");
     }
+
+    // window.addEventListener("load", function () {
+    //   inp.value = "";
+    // });
   });
 });

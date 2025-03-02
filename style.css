@@ -748,6 +748,12 @@ aside {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.projHealth .imgCont {
+  background-image: url(./asset/Intro.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .projtwo .imgCont {
   background-image: url(./asset/Guess.jpg);
