@@ -73,40 +73,40 @@ link.forEach(function (links) {
   });
 });
 
-let slideIndex = 1;
+// let slideIndex = 1;
 
-slider(slideIndex);
+// slider(slideIndex);
 
-function slider(n) {
-  const slides = document.querySelectorAll(".mySlides");
+// function slider(n) {
+//   const slides = document.querySelectorAll(".mySlides");
 
-  if (n > slides.length) {
-    slideIndex = 1;
-  } else if (n < 1) {
-    slideIndex = slides.length;
-  } else {
-    slideIndex = n;
-  }
-  slides.forEach(function (slide) {
-    slide.style.display = "none";
-  });
+//   if (n > slides.length) {
+//     slideIndex = 1;
+//   } else if (n < 1) {
+//     slideIndex = slides.length;
+//   } else {
+//     slideIndex = n;
+//   }
+//   slides.forEach(function (slide) {
+//     slide.style.display = "none";
+//   });
 
-  slides[slideIndex - 1].style.display = "block";
-}
+//   slides[slideIndex - 1].style.display = "block";
+// }
 
-function plusSlides(b) {
-  slider((slideIndex += b));
-}
+// function plusSlides(b) {
+//   slider((slideIndex += b));
+// }
 
-function currentSlide(c) {
-  slider((slideIndex = c));
-}
+// function currentSlide(c) {
+//   slider((slideIndex = c));
+// }
 
-function autoSlide() {
-  plusSlides(1);
-}
+// function autoSlide() {
+//   plusSlides(1);
+// }
 
-setInterval(autoSlide, 3000);
+// setInterval(autoSlide, 3000);
 
 readMore.addEventListener("click", function (e) {
   console.log(e);
@@ -115,6 +115,7 @@ readMore.addEventListener("click", function (e) {
     readLess.classList.remove("hide");
     readMore.classList.add("hide");
   });
+  console.log("click");
 });
 readLess.addEventListener("click", function (e) {
   console.log(e);
