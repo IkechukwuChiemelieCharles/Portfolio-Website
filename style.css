@@ -240,10 +240,14 @@ nav .logoCont {
   height: 46.5rem;
   position: relative;
   margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 
 .container .myImg {
   width: 100%;
+  height: 33.2rem;
 }
 .container .line {
 }
