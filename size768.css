@@ -52,12 +52,14 @@
 }
 
 .mainCont {
-  width: 100%;
+  max-width: 100%;
   gap: 2rem;
 }
 
 .mainCont .skillsCont {
-  width: 74rem;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  max-width: 74rem;
   height: 52rem;
   /* gap: 2rem; */
   flex-wrap: wrap;
@@ -68,9 +70,12 @@
   flex: 0 0 18.6rem;
   width: 18.6rem;
 }
+.section .sectCont {
+  max-width: 74rem;
+}
 
 .experience {
-  width: 70rem;
+  max-width: 70rem;
   /* height: 22.2rem; */
   padding-top: 1rem;
 }
@@ -104,7 +109,7 @@ article {
   flex-direction: row;
   align-items: start;
   justify-content: start;
-  width: 70rem;
+  max-width: 70rem;
   gap: 2rem;
 }
 
@@ -116,7 +121,7 @@ article {
 } */
 
 article .imgCont {
-  width: 33.621rem;
+  max-width: 33.621rem;
   height: 36.6rem;
   border-radius: 1rem;
 }
@@ -143,9 +148,10 @@ aside {
   /* height: 142.4rem; */
 }
 .asideCont {
-  width: 70rem;
+  max-width: 70rem;
   justify-content: center;
   gap: 4rem;
+
 }
 
 .projects .proj {
@@ -155,19 +161,21 @@ aside {
   align-items: center;
   color: var(--white);
   gap: 2.4rem;
+  width: 100%;
 }
 
 .right {
   height: 29.6rem;
 }
 .projects .imgCont {
-  width: 33rem;
-  height: 36.773rem;
+  /* max-width: 33rem; */
+  /* height: 36.773rem; */
 }
 .projects .projm {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
+  width: 100%;
 }
 
 .getInTouch {
@@ -178,7 +186,7 @@ aside {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 70rem;
+  max-width: 70rem;
 }
 
 form {
@@ -199,5 +207,5 @@ form textarea {
 
 .innerFooter {
   justify-content: space-between;
-  width: 74rem;
+  max-width: 74rem;
 }
