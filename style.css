@@ -645,26 +645,6 @@ article button:hover {
   cursor: pointer;
   font-weight: bolder;
 }
-aside {
-  background-color: var(--black);
-  width: 100%;
-  /* height: 254.92rem; */
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  padding: 4rem 0;
-}
-
-.asideCont {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  max-width: 34.3rem;
-  width: 100%;
-  height: 100%;
-}
 .about {
   display: flex;
   justify-content: start;
@@ -674,6 +654,26 @@ aside {
   height: 7.2rem;
   gap: 1.6rem;
   color: var(--black);
+}
+aside {
+  background-color: var(--black);
+  width: 100%;
+  /* height: 254.92rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.asideCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 34.3rem;
+  width: 100%;
+  height: 100%;
 }
 
 .about span {
@@ -692,6 +692,7 @@ aside {
   align-items: center;
   gap: 10rem;
   width: 90vw;
+  border: 1px solid red;
 }
 .project {
   display: flex;
@@ -702,6 +703,7 @@ aside {
   height: 7.2rem;
   color: var(--white);
   gap: 1rem;
+  border: 1px solid red;
 }
 
 .project span {
@@ -712,11 +714,11 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   color: var(--white);
   gap: 4.4rem;
   width: 100%;
-
+  border: 1px solid red;
 
   /* width: 100%; */
 }
