@@ -187,7 +187,8 @@ aside {
   width: 100%;
 }
 
-.projects .projm {
+.projects .projm,
+.projects .proj {
   gap: 1rem;
   width: 100%;
   justify-content: space-around;
