@@ -289,17 +289,24 @@ nav .logoCont {
   align-items: start;
   justify-content: start;
   gap: 1rem;
+  /* border: 1px solid red; */
 }
-
+/* .firstText {
+  border: 1px solid red;
+  display: flex;
+  jjus
+} */
 .introText .greeting {
   font-size: var(--font28);
   color: var(--black);
+  /* border: 1px solid green; */
 }
 .introText .name {
   font-size: var(--font28);
   font-weight: bolder;
   text-shadow: 0 1px 3px var(--black);
   color: var(--black);
+  /* border: 1px solid blue; */
 }
 
 .introText .role1,
@@ -308,6 +315,7 @@ nav .logoCont {
   color: var(--black);
   font-size: var(--font28);
   font-weight: bolder;
+  /* border: 1px solid black; */
 }
 .introText .role2 {
   color: var(--white);
@@ -386,6 +394,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  margin-top: 4rem;
 }
 .skill {
   display: flex;
