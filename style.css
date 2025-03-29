@@ -692,7 +692,6 @@ aside {
   align-items: center;
   gap: 10rem;
   width: 90vw;
-  border: 1px solid red;
 }
 .project {
   display: flex;
@@ -703,7 +702,6 @@ aside {
   height: 7.2rem;
   color: var(--white);
   gap: 1rem;
-  border: 1px solid red;
 }
 
 .project span {
@@ -718,7 +716,6 @@ aside {
   color: var(--white);
   gap: 4.4rem;
   width: 100%;
-  border: 1px solid red;
 
   /* width: 100%; */
 }
